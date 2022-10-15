@@ -1,0 +1,91 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.class_442
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = element
+  orientation_element = 6317f82b-c9a4-4b5b-949d-146fc7c088fd1665795555692
+  x = 0
+  action = movebutton
+  y = 24
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 2
+  width = 165
+  action = deep_customization_element:title_screen_branding
+  actionid = 05196412-7c36-4489-a202-15577d16ad981665795502506
+  y = 228
+  height = 10
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 318
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = 62d29d83-ce79-4465-aebf-91cbae507f671665795502506
+  y = 160
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 78
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 9f6c55f4-423e-45e7-8c51-8192a6f2e82d1665795502506
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = false
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = d69fbd80-3343-4bce-8044-5a173c94bf921665795502506
+  y = 0
+  height = 30
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = joinserver
+  label = Official Server
+  loopbackgroundanimations = true
+  orientation_element = vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button
+  x = 0
+  width = 200
+  actionid = 6317f82b-c9a4-4b5b-949d-146fc7c088fd1665795555692
+  action = addbutton
+  y = 24
+  value = play.epherical.com
+  height = 20
+}
+

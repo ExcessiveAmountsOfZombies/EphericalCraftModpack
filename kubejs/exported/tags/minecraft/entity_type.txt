@@ -1,0 +1,150 @@
+To refresh this file, delete it and run /reload command again! Last updated: Oct 14, 2022, 7:48:17 PM
+
+#minecraft:axolotl_always_hostiles
+- minecraft:drowned (from Default)
+- minecraft:guardian (from Default)
+- minecraft:elder_guardian (from Default)
+
+#minecraft:freeze_immune_entity_types
+- minecraft:stray (from Default)
+- minecraft:polar_bear (from Default)
+- minecraft:snow_golem (from Default)
+- minecraft:wither (from Default)
+- ecologics:penguin (from Ecologics)
+
+#byg:boats
+- byg:boat (from Oh The Biomes You'll Go)
+- byg:chest_boat (from Oh The Biomes You'll Go)
+
+#byg:not_hurt_by_quartz_crystals
+- minecraft:ghast (from Oh The Biomes You'll Go)
+- minecraft:hoglin (from Oh The Biomes You'll Go)
+- minecraft:enderman (from Oh The Biomes You'll Go)
+
+#biomemakeover:lightning_bugs
+- biomemakeover:lightning_bug (from Biome Makeover)
+- biomemakeover:lightning_bug_alternate (from Biome Makeover)
+
+#minecraft:impact_projectiles
+- #minecraft:arrows (from Default)
+- minecraft:snowball (from Default)
+- minecraft:fireball (from Default)
+- minecraft:small_fireball (from Default)
+- minecraft:egg (from Default)
+- minecraft:trident (from Default)
+- minecraft:dragon_fireball (from Default)
+- minecraft:wither_skull (from Default)
+
+#minecraft:beehive_inhabitors
+- minecraft:bee (from Default)
+
+#biomemakeover:owl_targets
+- minecraft:rabbit (from Biome Makeover)
+- minecraft:chicken (from Biome Makeover)
+- minecraft:silverfish (from Biome Makeover)
+- minecraft:endermite (from Biome Makeover)
+- minecraft:bat (from Biome Makeover)
+- biomemakeover:toad (from Biome Makeover)
+- biomemakeover:blightbat (from Biome Makeover)
+- biomemakeover:dragonfly (from Biome Makeover)
+- biomemakeover:lightning_bug (from Biome Makeover)
+- biomemakeover:lightning_bug_alternate (from Biome Makeover)
+
+#c:boats
+- #byg:boats (from Oh The Biomes You'll Go)
+- minecraft:boat (from Fabric Convention Tags)
+- minecraft:chest_boat (from Fabric Convention Tags)
+
+#minecraft:skeletons
+- minecraft:skeleton (from Default)
+- minecraft:stray (from Default)
+- minecraft:wither_skeleton (from Default)
+
+#minecraft:arrows
+- minecraft:arrow (from Default)
+- minecraft:spectral_arrow (from Default)
+
+#minecraft:frog_food
+- minecraft:slime (from Default)
+- minecraft:magma_cube (from Default)
+- biomemakeover:dragonfly (from Biome Makeover)
+- biomemakeover:lightning_bug (from Biome Makeover)
+- biomemakeover:lightning_bug_alternate (from Biome Makeover)
+
+#minecraft:freeze_hurts_extra_types
+- minecraft:strider (from Default)
+- minecraft:blaze (from Default)
+- minecraft:magma_cube (from Default)
+
+#forge:boats
+- #byg:boats (from Oh The Biomes You'll Go)
+
+#c:bosses
+- minecraft:ender_dragon (from Fabric Convention Tags)
+- minecraft:wither (from Fabric Convention Tags)
+
+#farmersdelight:horse_feed_users
+- minecraft:horse (from Farmer's Delight)
+- minecraft:skeleton_horse (from Farmer's Delight)
+- minecraft:zombie_horse (from Farmer's Delight)
+- minecraft:donkey (from Farmer's Delight)
+- minecraft:mule (from Farmer's Delight)
+- minecraft:llama (from Farmer's Delight)
+
+#twigs:bamboo_leaves_slow_immune
+- minecraft:panda (from Twigs)
+- minecraft:bee (from Twigs)
+- minecraft:parrot (from Twigs)
+- minecraft:ocelot (from Twigs)
+
+#minecraft:raiders
+- minecraft:evoker (from Default)
+- minecraft:pillager (from Default)
+- minecraft:ravager (from Default)
+- minecraft:vindicator (from Default)
+- minecraft:illusioner (from Default)
+- minecraft:witch (from Default)
+- biomemakeover:adjudicator (from Biome Makeover)
+
+#c:minecarts
+- minecraft:minecart (from Fabric Convention Tags)
+- minecraft:tnt_minecart (from Fabric Convention Tags)
+- minecraft:chest_minecart (from Fabric Convention Tags)
+- minecraft:furnace_minecart (from Fabric Convention Tags)
+- minecraft:command_block_minecart (from Fabric Convention Tags)
+- minecraft:hopper_minecart (from Fabric Convention Tags)
+- minecraft:spawner_minecart (from Fabric Convention Tags)
+
+#minecraft:powder_snow_walkable_mobs
+- minecraft:rabbit (from Default)
+- minecraft:endermite (from Default)
+- minecraft:silverfish (from Default)
+- minecraft:fox (from Default)
+- ecologics:penguin (from Ecologics)
+- ecologics:squirrel (from Ecologics)
+
+#industrialforegoing:mob_imprisonment_tool_blacklist
+- artifacts:mimic (from Artifacts)
+
+#byg:all/boats
+- #byg:boats? (from Oh The Biomes You'll Go)
+- #c:boats? (from Oh The Biomes You'll Go)
+- #forge:boats? (from Oh The Biomes You'll Go)
+
+#ecologics:penguin_hunt_targets
+- minecraft:tropical_fish (from Ecologics)
+- minecraft:salmon (from Ecologics)
+- minecraft:cod (from Ecologics)
+
+#minecraft:axolotl_hunt_targets
+- minecraft:tropical_fish (from Default)
+- minecraft:pufferfish (from Default)
+- minecraft:salmon (from Default)
+- minecraft:cod (from Default)
+- minecraft:squid (from Default)
+- minecraft:glow_squid (from Default)
+- minecraft:tadpole (from Default)
+- biomemakeover:glowfish (from Biome Makeover)
+
+#farmersdelight:dog_food_users
+- minecraft:wolf (from Farmer's Delight)
