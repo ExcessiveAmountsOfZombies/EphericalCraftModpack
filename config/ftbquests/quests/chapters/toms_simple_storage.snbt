@@ -1,0 +1,167 @@
+{
+	id: "32F6D02E974882C3"
+	group: "68F79A7A3D70E036"
+	order_index: 3
+	filename: "toms_simple_storage"
+	title: "Store Those Items"
+	icon: "toms_storage:ts.wireless_terminal"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Discover the methods of storage in EphericalCraft"
+			description: [
+				"There are three main ways to store"
+				"items in EphericalCraft."
+				""
+				"Tom's Simple Storage Mod"
+				"Traveler's Backpacks"
+				"Modern Industrialization Barrels"
+				""
+				"Barrels come in a much later stage,"
+				"so for now you will want to use"
+				"Tom's Simple Storage Mod"
+			]
+			id: "3954A4D1C81D4CCF"
+			tasks: [{
+				id: "6EA341CC7A9BEA18"
+				type: "checkmark"
+				title: "Storage Methods"
+			}]
+		}
+		{
+			icon: "toms_storage:ts.storage_terminal"
+			x: -5.5d
+			y: -1.0d
+			subtitle: "Connecting the Network"
+			dependencies: ["5C2CF6DDA526C1C7"]
+			id: "699290568728438A"
+			tasks: [
+				{
+					id: "1249B35E873AB9B0"
+					type: "item"
+					item: "toms_storage:ts.storage_terminal"
+				}
+				{
+					id: "3D5B865A86F1B16A"
+					type: "item"
+					item: "toms_storage:ts.crafting_terminal"
+				}
+				{
+					id: "70404FF0C09CC750"
+					type: "item"
+					item: "toms_storage:ts.inventory_cable_connector"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			dependencies: ["3954A4D1C81D4CCF"]
+			id: "33E57DE124381F9E"
+			tasks: [{
+				id: "581F548672F491BE"
+				type: "item"
+				item: "modern_industrialization:bronze_barrel"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			subtitle: "Just your standard everyday backpack"
+			dependencies: ["3954A4D1C81D4CCF"]
+			id: "26A1B1A6A180C5BB"
+			tasks: [{
+				id: "450821B5B605CABC"
+				type: "item"
+				item: {
+					id: "travelersbackpack:standard"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "The Beginning Of Your Network"
+			x: -3.0d
+			y: 0.0d
+			shape: "square"
+			description: ["You've just created a massive storage room for your 30 ores, now you need a way to connect the inventories all together."]
+			dependencies: ["3954A4D1C81D4CCF"]
+			id: "5C2CF6DDA526C1C7"
+			tasks: [{
+				id: "6EB39129145676B2"
+				type: "item"
+				item: "toms_storage:ts.inventory_connector"
+			}]
+		}
+		{
+			title: "Craft Cables"
+			x: -5.5d
+			y: 1.0d
+			subtitle: "Your network must be connected!"
+			description: ["With the framed inventory blocks and a paint kit, you can disguise your cables as blocks to hide them behind walls. Holding the paint kit, shift right click the block you want to imitate and then right click on the framed cable to paint it."]
+			dependencies: ["5C2CF6DDA526C1C7"]
+			id: "75DEDC8B5E291B3C"
+			tasks: [{
+				id: "4B579431F07CE0F3"
+				type: "item"
+				item: "toms_storage:ts.inventory_cable"
+				count: 64L
+			}]
+			rewards: [
+				{
+					id: "7B9CE5595A8682FA"
+					type: "item"
+					item: "toms_storage:ts.inventory_cable_framed"
+					count: 64
+				}
+				{
+					id: "39A130B41E6306AA"
+					type: "item"
+					item: {
+						id: "toms_storage:ts.paint_kit"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 4.5d
+			subtitle: "There is no size increase, but you do get armor!"
+			dependencies: ["26A1B1A6A180C5BB"]
+			id: "681E1B55CFCCB707"
+			tasks: [{
+				id: "21E0FCDD49CD06B3"
+				type: "item"
+				item: {
+					id: "travelersbackpack:netherite"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.5d
+			subtitle: "Provides potion effects"
+			dependencies: ["26A1B1A6A180C5BB"]
+			id: "1464A8DBAD6C601F"
+			tasks: [{
+				id: "3F5EDCB9128B9D19"
+				type: "item"
+				item: {
+					id: "travelersbackpack:dragon"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+    "fuels": [
+        {
+            "item": "modern_industrialization:lignite_coal",
+            "fuel": 1000
+        },
+        {
+            "item": "modern_industrialization:lignite_coal_dust",
+            "fuel": 1000
+        }
+    ]
+}

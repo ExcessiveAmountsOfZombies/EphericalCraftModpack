@@ -1,0 +1,681 @@
+{
+	id: "11D00DB653071060"
+	group: "68F79A7A3D70E036"
+	order_index: 0
+	filename: "starting_out"
+	title: "Starting Out"
+	icon: "farmersdelight:cooking_pot"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Find Croptopia seeds"
+			x: -8.5d
+			y: -1.5d
+			shape: "square"
+			subtitle: "They can be found all over the world!"
+			description: ["Croptopia adds a ton of foods to the game, the crops and trees can be found all over the world."]
+			id: "42E8A71F3931E198"
+			tasks: [{
+				id: "5E817E849377C936"
+				type: "advancement"
+				icon: "croptopia:barley_seed"
+				advancement: "croptopia:getseeds"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Place a Cooking Pot"
+			x: -7.5d
+			y: -4.5d
+			description: ["Farmer's Delight expands on the vanilla foods, and adds placable meals, similar to cake to add a more in-depth feeling to cooking."]
+			dependencies: ["42E8A71F3931E198"]
+			id: "08EBF95952A9EC5F"
+			tasks: [{
+				id: "5B84A88F248447AF"
+				type: "advancement"
+				advancement: "farmersdelight:main/place_cooking_pot"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "31BBA738EE8B1808"
+				type: "item"
+				item: "farmersdelight:shepherds_pie_block"
+			}]
+		}
+		{
+			title: "Explore a Catacomb"
+			x: -4.5d
+			y: -1.0d
+			shape: "diamond"
+			subtitle: "There are more dungeons in the world, one of them is the catacomb."
+			id: "315A0954C4A2B8C6"
+			tasks: [{
+				id: "54CFA9236402030B"
+				type: "advancement"
+				icon: "minecraft:mossy_cobblestone"
+				advancement: "betterdungeons:zombie_dungeon"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Winner Winner Chicken Dinner"
+			x: -10.5d
+			y: -7.0d
+			shape: "rsquare"
+			subtitle: "Craft and place a roast chicken dinner."
+			description: ["To eat the meal, get a bowl and right click on the meal."]
+			dependencies: ["08EBF95952A9EC5F"]
+			id: "569F475A8C5BDF76"
+			tasks: [
+				{
+					id: "377FE6E41C6C221B"
+					type: "item"
+					item: "farmersdelight:roast_chicken_block"
+				}
+				{
+					id: "5613BF70FD1433E2"
+					type: "advancement"
+					advancement: "farmersdelight:main/place_feast"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "Grandma's Best"
+			x: -8.0d
+			y: -8.0d
+			shape: "rsquare"
+			description: ["Craft and Place an Apple Pie down, consuming it will give you the speed potion effect."]
+			dependencies: ["08EBF95952A9EC5F"]
+			id: "7DE2618391DEAADB"
+			tasks: [{
+				id: "32503DCAA1AB3A22"
+				type: "item"
+				item: "farmersdelight:apple_pie"
+			}]
+		}
+		{
+			title: "Craft Pineapple Pepperoni Pizza"
+			x: -5.5d
+			y: -7.5d
+			shape: "rsquare"
+			subtitle: "It tastes great."
+			dependencies: ["08EBF95952A9EC5F"]
+			id: "726AF3F44E0A9693"
+			tasks: [{
+				id: "007715ACB99B4EA8"
+				type: "item"
+				item: "croptopia:pineapple_pepperoni_pizza"
+				count: 16L
+			}]
+		}
+		{
+			title: "Harvesting Gamers"
+			x: -10.0d
+			y: -2.5d
+			shape: "square"
+			subtitle: "Salt can be found around rivers in the world."
+			id: "6054B9DECE852619"
+			tasks: [{
+				id: "6A92EA65FC4DB134"
+				type: "item"
+				item: "croptopia:salt"
+				count: 32L
+			}]
+		}
+		{
+			x: -4.0d
+			y: -0.5d
+			shape: "diamond"
+			subtitle: "Find a new Spider Dungeon"
+			id: "4D89AB1B106DFC7F"
+			tasks: [{
+				id: "5C981D17B693129F"
+				type: "advancement"
+				title: "Arachnophobes Worst Nightmare"
+				advancement: "betterdungeons:spider_dungeon"
+				criterion: ""
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.0d
+			shape: "diamond"
+			subtitle: "The Stronghold has been improved"
+			description: ["Getting to the end requires something other than ender eyes now, you'll have to find these items before you can go to the end."]
+			id: "2097E96CE7B9EF8C"
+			tasks: [{
+				id: "356BB1AF3B64DF7A"
+				type: "advancement"
+				title: "Find The New Stronghold"
+				icon: "minecraft:infested_stone_bricks"
+				advancement: "minecraft:story/follow_ender_eye"
+				criterion: ""
+			}]
+		}
+		{
+			x: 0.5d
+			y: -6.0d
+			dependencies: ["2097E96CE7B9EF8C"]
+			id: "0C042B9B6F80CB3A"
+			tasks: [{
+				id: "615F8F811EF454A2"
+				type: "item"
+				item: "endrem:old_eye"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.0d
+			dependencies: ["2097E96CE7B9EF8C"]
+			id: "22B2D0257CE3F640"
+			tasks: [{
+				id: "4B9BDBD640B6F684"
+				type: "item"
+				item: "endrem:nether_eye"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -5.0d
+			dependencies: ["2097E96CE7B9EF8C"]
+			id: "06BFC86BF34B18D8"
+			tasks: [{
+				id: "5F2A3C76A0DE7591"
+				type: "item"
+				item: "endrem:cold_eye"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -4.0d
+			dependencies: ["2097E96CE7B9EF8C"]
+			id: "0DFB0D697F008E21"
+			tasks: [{
+				id: "191FBECD94538AF3"
+				type: "item"
+				item: "endrem:rogue_eye"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -6.0d
+			dependencies: ["2097E96CE7B9EF8C"]
+			id: "3C83621F6DDA97FC"
+			tasks: [{
+				id: "44A6E1C4A932E448"
+				type: "item"
+				item: "endrem:black_eye"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -6.0d
+			dependencies: ["2097E96CE7B9EF8C"]
+			id: "32B36F89F4F03D50"
+			tasks: [{
+				id: "3B4C860D741DF353"
+				type: "item"
+				item: "endrem:lost_eye"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -4.0d
+			dependencies: ["2097E96CE7B9EF8C"]
+			id: "1025B2D4B6952632"
+			tasks: [{
+				id: "66B21427AD85FCA7"
+				type: "item"
+				item: "endrem:corrupted_eye"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -5.0d
+			shape: "circle"
+			dependencies: ["2097E96CE7B9EF8C"]
+			id: "3A10A4D8B1D94307"
+			tasks: [{
+				id: "6D9E5F67BDE6D020"
+				type: "item"
+				item: "endrem:wither_eye"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			dependencies: ["2097E96CE7B9EF8C"]
+			id: "7425394841B5A893"
+			tasks: [{
+				id: "58D0FE42175EE205"
+				type: "item"
+				item: "endrem:guardian_eye"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			dependencies: ["2097E96CE7B9EF8C"]
+			id: "1CDE639A02B1BEFD"
+			tasks: [{
+				id: "3A98992E0C18EDCD"
+				type: "item"
+				item: "endrem:witch_eye"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.0d
+			dependencies: ["2097E96CE7B9EF8C"]
+			id: "52B76F7900EDFE4A"
+			tasks: [{
+				id: "00E2515224BFF933"
+				type: "item"
+				item: "endrem:cursed_eye"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.0d
+			dependencies: ["2097E96CE7B9EF8C"]
+			id: "5CB058B55B1ACE31"
+			tasks: [{
+				id: "2DF0C1B0546730CA"
+				type: "item"
+				item: "endrem:exotic_eye"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -6.5d
+			dependencies: ["2097E96CE7B9EF8C"]
+			id: "6641AD63C8D1F285"
+			tasks: [{
+				id: "031D75C9D7869231"
+				type: "item"
+				item: "endrem:evil_eye"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -6.5d
+			dependencies: ["2097E96CE7B9EF8C"]
+			id: "5124769BE9AB2DFE"
+			tasks: [{
+				id: "629C0C384B3C5541"
+				type: "item"
+				item: "endrem:undead_eye"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -7.0d
+			subtitle: "Only read if you want to spoil how to find the eyes"
+			description: [
+				"Old Eye: Desert Pyramids"
+				"Nether Eye: Nether Fortresses"
+				"Cold Eye: Igloos"
+				"Rogue Eye: Jungle Pyramids"
+				"Black Eye: Buried Chests"
+				"Magical Eye: Evokers"
+				"Lost Eye: Mineshafts"
+				"Corrupted Eye: Pillager Outposts"
+				"Wither Eye: Kill Wither"
+				"Guardian Eye: Kill Elder Guardian"
+				"Witch Eye: Craft it with Witch Pupil"
+				"Cursed Eye: Bastion treasure"
+				"Exotic Eye: Craft using aquatic items"
+				"Evil Eye: Purchase From Master Cleric"
+				"Undead Eye: Craft Using Undead Soul"
+				"Cryptic Eye: Small Chance when enchanting"
+			]
+			optional: true
+			id: "2C1883F115330170"
+			tasks: [{
+				id: "51994737D98377D0"
+				type: "checkmark"
+				title: "EYE FIND SPOILER"
+			}]
+		}
+		{
+			title: "Find a New Desert Temple"
+			x: -5.0d
+			y: -0.5d
+			shape: "diamond"
+			id: "02C56B3BC431AA3F"
+			tasks: [{
+				id: "4EF2FD76899C96EF"
+				type: "advancement"
+				icon: "minecraft:chiseled_sandstone"
+				advancement: "betterdeserttemples:temple_entry"
+				criterion: ""
+			}]
+		}
+		{
+			x: -4.5d
+			y: -2.5d
+			subtitle: "What are they?"
+			description: [
+				"Professions can be found by hitting 'J' by default."
+				""
+				"Professions help gate some of the content in the pack, giving an order of progression, as well as making you more powerful as you level them up."
+				""
+				"As an example, they are used to gate the ability to use Quantum items, as well as the usage of the Alloy Forges."
+			]
+			id: "3C45409D8EBF1411"
+			tasks: [{
+				id: "2A121A09254BD41B"
+				type: "checkmark"
+				title: "Professions"
+			}]
+		}
+		{
+			title: "Improving The Land"
+			x: -11.5d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "Make Organic Compost to grow your crops faster!"
+			dependencies: ["42E8A71F3931E198"]
+			id: "7FBC7E85EDCDF8F0"
+			tasks: [{
+				id: "71E02A5980726F2B"
+				type: "item"
+				item: "farmersdelight:organic_compost"
+				count: 32L
+			}]
+			rewards: [{
+				id: "1A8CAF4757E1AB87"
+				type: "item"
+				item: "farmersdelight:rich_soil"
+				count: 16
+			}]
+		}
+		{
+			x: -13.5d
+			y: -1.0d
+			subtitle: "With this, you can make your crops grow faster!"
+			dependencies: ["7FBC7E85EDCDF8F0"]
+			id: "0D9ABFD36DB89210"
+			tasks: [{
+				id: "6A8B0C19BABC0177"
+				type: "item"
+				item: "croptosis:gold_watering_can"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -3.0d
+			shape: "octagon"
+			dependencies: ["0D9ABFD36DB89210"]
+			id: "0F26628DC32DBE17"
+			tasks: [{
+				id: "5F976D4888C6FD08"
+				type: "item"
+				item: "croptosis:netherite_watering_can"
+			}]
+		}
+		{
+			title: "Chef's Essentials"
+			x: -13.0d
+			y: -5.5d
+			subtitle: "All that you will need to start your cooking journey"
+			dependencies: ["08EBF95952A9EC5F"]
+			id: "0E0122D3900910BB"
+			tasks: [
+				{
+					id: "2800279B8DC352FE"
+					type: "item"
+					item: "farmersdelight:cooking_pot"
+				}
+				{
+					id: "1BF3D273878B6278"
+					type: "item"
+					item: "croptopia:cooking_pot"
+				}
+				{
+					id: "5D5D6E70737A0EE3"
+					type: "item"
+					item: "croptopia:frying_pan"
+				}
+				{
+					id: "50E86CE83FC63D59"
+					type: "item"
+					item: "croptopia:mortar_and_pestle"
+				}
+				{
+					id: "29119D15CB284AE7"
+					type: "item"
+					item: {
+						id: "farmersdelight:skillet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0CBB92B957BDE9F0"
+					type: "item"
+					item: "croptopia:food_press"
+				}
+				{
+					id: "39F288EDE75BD7D8"
+					type: "item"
+					item: "croptopia:knife"
+				}
+			]
+			rewards: [
+				{
+					id: "15F57D17D8055F14"
+					type: "item"
+					item: "croptopia:trifle"
+				}
+				{
+					id: "10B38B4CB91721E9"
+					type: "item"
+					item: "farmersdelight:stove"
+					count: 2
+				}
+				{
+					id: "0A6706D46654BBDD"
+					type: "item"
+					item: "farmersdelight:oak_cabinet"
+					count: 4
+				}
+			]
+		}
+		{
+			x: -12.5d
+			y: -9.0d
+			dependencies: ["569F475A8C5BDF76"]
+			id: "275767F4E98590D3"
+			tasks: [{
+				id: "3776E14FFFF35380"
+				type: "item"
+				item: "croptopia:the_big_breakfast"
+				count: 8L
+			}]
+			rewards: [{
+				id: "64F9917C03E12518"
+				type: "item"
+				item: "croptopia:greenonion"
+				count: 16
+			}]
+		}
+		{
+			title: "You're Screaming for the Ice Cream"
+			x: -10.0d
+			y: -9.5d
+			subtitle: "We all know it"
+			description: [""]
+			dependencies: ["7DE2618391DEAADB"]
+			id: "3C166B6036B9BF3F"
+			tasks: [{
+				id: "6A741735367E11EC"
+				type: "item"
+				title: "Ice Cream"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "croptopia:mango_ice_cream"
+								Count: 1b
+							}
+							{
+								id: "croptopia:pecan_ice_cream"
+								Count: 1b
+							}
+							{
+								id: "croptopia:strawberry_ice_cream"
+								Count: 1b
+							}
+							{
+								id: "croptopia:vanilla_ice_cream"
+								Count: 1b
+							}
+							{
+								id: "croptopia:rum_raisin_ice_cream"
+								Count: 1b
+							}
+							{
+								id: "croptopia:chocolate_ice_cream"
+								Count: 1b
+							}
+						]
+					}
+				}
+				count: 16L
+			}]
+		}
+		{
+			title: "Why Aren't I Getting Drunk?"
+			x: -6.5d
+			y: -10.0d
+			subtitle: "I shouldn't even be able to stand after having this much!"
+			dependencies: ["7DE2618391DEAADB"]
+			id: "43A0E21F24935136"
+			tasks: [{
+				id: "28B7E9043217583F"
+				type: "item"
+				title: "Alcohol"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "croptopia:rum"
+								Count: 1b
+							}
+							{
+								id: "croptopia:mead"
+								Count: 1b
+							}
+							{
+								id: "croptopia:wine"
+								Count: 1b
+							}
+							{
+								id: "croptopia:beer"
+								Count: 1b
+							}
+						]
+					}
+				}
+				count: 16L
+			}]
+		}
+		{
+			title: "I Can't Eat All This Salad!!"
+			x: -3.0d
+			y: -9.0d
+			dependencies: ["726AF3F44E0A9693"]
+			id: "7506002249083843"
+			tasks: [{
+				id: "292DF08A2BD54D13"
+				type: "item"
+				title: "Salads"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "croptopia:veggie_salad"
+								Count: 1b
+							}
+							{
+								id: "croptopia:fruit_salad"
+								Count: 1b
+							}
+							{
+								id: "croptopia:leafy_salad"
+								Count: 1b
+							}
+							{
+								id: "croptopia:caesar_salad"
+								Count: 1b
+							}
+							{
+								id: "croptopia:cucumber_salad"
+								Count: 1b
+							}
+						]
+					}
+				}
+				count: 64L
+			}]
+		}
+		{
+			title: "Croptopia Fishing"
+			x: -9.5d
+			y: 1.5d
+			shape: "rsquare"
+			subtitle: "Catch Some Sea Animals From Croptopia"
+			dependencies: ["42E8A71F3931E198"]
+			id: "742086C253F1ECCD"
+			tasks: [{
+				id: "063A8AA5FD9A20A7"
+				type: "item"
+				title: "Not All Fish"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "croptopia:tuna"
+								Count: 1b
+							}
+							{
+								id: "croptopia:shrimp"
+								Count: 1b
+							}
+							{
+								id: "croptopia:oyster"
+								Count: 1b
+							}
+							{
+								id: "croptopia:crab"
+								Count: 1b
+							}
+							{
+								id: "croptopia:clam"
+								Count: 1b
+							}
+							{
+								id: "croptopia:anchovy"
+								Count: 1b
+							}
+						]
+					}
+				}
+				count: 4L
+			}]
+		}
+	]
+}

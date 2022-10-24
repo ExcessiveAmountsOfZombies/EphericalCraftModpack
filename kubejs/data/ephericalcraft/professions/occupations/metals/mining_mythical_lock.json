@@ -1,0 +1,26 @@
+{
+    "function_type": "professions:append",
+    "to_edit_profession_key": "professions:mining",
+    "actions": [],
+    "unlocks": [
+        {
+            "unlock": "professions:interaction_unlock",
+            "level": 40,
+            "items": [
+                "alloy_forgery:adamantite_block_forge_controller",
+                "alloy_forgery:end_stone_bricks_forge_controller"
+            ]
+        },
+        {
+            "unlock": "professions:interaction_unlock",
+            "level": 20,
+            "items": [
+                "alloy_forgery:bricks_forge_controller",
+                "alloy_forgery:deepslate_bricks_forge_controller",
+                "alloy_forgery:polished_blackstone_forge_controller",
+                "alloy_forgery:prismarine_bricks_forge_controller",
+                "alloy_forgery:stone_bricks_forge_controller"
+            ]
+        }
+    ]
+}

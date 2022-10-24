@@ -1,0 +1,275 @@
+{
+	id: "76DC190D84D9FB90"
+	group: "68F79A7A3D70E036"
+	order_index: 2
+	filename: "mythic_metals"
+	title: "Mythic Metals"
+	icon: "mythicmetals:celestium_ingot"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.0d
+			y: 0.5d
+			subtitle: "You must know the ore, before you can work the ore"
+			description: ["Get to level 20 in the mining occupation, once you have done that, you can begin learning how to make alloys out of the ores you've mined."]
+			id: "4FDD5E16AC36AC48"
+			tasks: [{
+				id: "19457DE0A754D314"
+				type: "professions:profession"
+				title: "Oresmith"
+				icon: "mythicmetals:orichalcum_ore"
+				prof: "professions:mining"
+				action: "LEVEL"
+				level: 20
+			}]
+		}
+		{
+			title: "The Best Alloys"
+			x: -2.0d
+			y: -4.5d
+			subtitle: "Get to level 40 in the Mining occupation"
+			dependencies: ["79E135B96F68B4C9"]
+			id: "0811FD39EC397870"
+			tasks: [{
+				id: "3CE5C7D26C0F7561"
+				type: "professions:profession"
+				icon: {
+					id: "mythicmetals:legendary_banglum_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				prof: "professions:mining"
+				action: "LEVEL"
+				level: 40
+			}]
+		}
+		{
+			title: "Craft That Forge!"
+			x: -3.5d
+			y: -2.5d
+			description: [
+				"Now that you've made it to level 20 in mining, it is time to craft an alloy forge. This will allow you to make some new alloys so that you can make new armors and tools."
+				""
+				"This includes durasteel, but also adamantite, orichalcum, and mythril"
+			]
+			dependencies: ["4FDD5E16AC36AC48"]
+			id: "79E135B96F68B4C9"
+			tasks: [{
+				id: "3A30E10B1428E414"
+				type: "item"
+				item: "alloy_forgery:deepslate_bricks_forge_controller"
+			}]
+		}
+		{
+			title: "Mythical Ingots"
+			x: -6.0d
+			y: 0.5d
+			subtitle: "Obtain 24 of these ingots"
+			dependencies: ["79E135B96F68B4C9"]
+			id: "653F1B37EE238AF5"
+			tasks: [
+				{
+					id: "5ED90840247EE8EA"
+					type: "item"
+					item: "mythicmetals:adamantite_ingot"
+					count: 24L
+				}
+				{
+					id: "20AC8E47BD6BBD69"
+					type: "item"
+					item: "mythicmetals:mythril_ingot"
+					count: 24L
+				}
+				{
+					id: "35E0D161047F4728"
+					type: "item"
+					item: "mythicmetals:orichalcum_ingot"
+					count: 24L
+					consume_items: false
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -6.5d
+			subtitle: "The best alloys await"
+			description: ["You can now make items that use Celestium, Legendary Banglum, Metallurgium, and Hallowed Ingots"]
+			dependencies: ["0811FD39EC397870"]
+			id: "3BAD9A74D19F5904"
+			tasks: [{
+				id: "468630BD85A33A8F"
+				type: "item"
+				item: "alloy_forgery:adamantite_block_forge_controller"
+			}]
+		}
+		{
+			title: "Massive Chest Ahead"
+			x: 2.5d
+			y: 1.5d
+			subtitle: "Craft a Metallurgium Chest"
+			dependencies: ["4C3F12ACB0C2700D"]
+			id: "3F13CB27762B9A6D"
+			tasks: [{
+				id: "64941044BACCC38C"
+				type: "item"
+				item: "mythicmetals_decorations:metallurgium_chest"
+			}]
+		}
+		{
+			title: "Better Than Vanilla"
+			x: -1.5d
+			y: -2.5d
+			subtitle: "Craft a Bronze Chest, it has 63 slots!"
+			id: "4C3F12ACB0C2700D"
+			tasks: [{
+				id: "5F79A94CE2AC25A2"
+				type: "item"
+				item: "mythicmetals_decorations:bronze_chest"
+			}]
+		}
+		{
+			title: "From a Galaxy Far Far Away"
+			x: -6.5d
+			y: -2.5d
+			dependencies: ["79E135B96F68B4C9"]
+			id: "6084254B0A62B6FF"
+			tasks: [
+				{
+					id: "1D174EF4AB57A978"
+					type: "item"
+					item: {
+						id: "mythicmetals:durasteel_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "62A4BCEC364EAB26"
+					type: "item"
+					item: {
+						id: "mythicmetals:durasteel_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "168F19905762F7E9"
+					type: "item"
+					item: {
+						id: "mythicmetals:durasteel_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "41AB7CF25C57EACC"
+					type: "item"
+					item: {
+						id: "mythicmetals:durasteel_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "A Holy Paladin"
+			x: -3.5d
+			y: -6.5d
+			dependencies: [
+				"6084254B0A62B6FF"
+				"3BAD9A74D19F5904"
+			]
+			id: "2D5EEE8D843194B8"
+			tasks: [
+				{
+					id: "6B6248D3575B6447"
+					type: "item"
+					item: {
+						id: "mythicmetals:hallowed_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3E8EEB5D589BD8F4"
+					type: "item"
+					item: {
+						id: "mythicmetals:hallowed_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6469392C456A79A1"
+					type: "item"
+					item: {
+						id: "mythicmetals:hallowed_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1E5FA508A11048F7"
+					type: "item"
+					item: {
+						id: "mythicmetals:hallowed_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Block Blaster 2000"
+			x: 1.5d
+			y: -1.5d
+			subtitle: "Right click to activate, be careful though!"
+			dependencies: ["0811FD39EC397870"]
+			id: "07232250629A6F5D"
+			tasks: [
+				{
+					id: "3F1AF54615D0DE06"
+					type: "item"
+					item: {
+						id: "mythicmetals:legendary_banglum_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5FD6D5BD44F3B191"
+					type: "item"
+					item: {
+						id: "mythicmetals:legendary_banglum_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+	]
+}

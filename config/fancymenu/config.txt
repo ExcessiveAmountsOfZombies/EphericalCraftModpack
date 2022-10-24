@@ -2,7 +2,7 @@
 
 [If menu background sounds added by FancyMenu should be played when a world is loaded.]
 B:playbackgroundsoundsinworld = 'false';
-B:forcefullscreen = 'true';
+B:forcefullscreen = 'false';
 [If menu background sounds added by FancyMenu should be played or not.]
 B:playbackgroundsounds = 'true';
 [A minecraft restart is required after changing this value.]
@@ -16,7 +16,7 @@ I:defaultguiscale = '-1';
 ##[customization]
 
 B:advancedmode = 'false';
-B:showcustomizationbuttons = 'true';
+B:showcustomizationbuttons = 'false';
 
 
 ##[loading]
@@ -65,3 +65,8 @@ B:showvanillamovewarning = 'true';
 ##[ui]
 
 F:uiscale = '1.0';
+
+
+##[compatibility]
+
+B:allow_level_registry_interactions = 'true';

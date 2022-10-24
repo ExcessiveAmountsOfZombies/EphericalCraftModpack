@@ -1,0 +1,20 @@
+{
+	id: "4BDFDE1E637358C2"
+	group: "36561102421A9235"
+	order_index: 0
+	filename: "spectrum"
+	title: "Spectrum"
+	icon: {
+		id: "spectrum:bedrock_sword"
+		Count: 1b
+		tag: {
+			Enchantments: [{
+				id: "minecraft:sharpness"
+				lvl: 6s
+			}]
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

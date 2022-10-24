@@ -1,0 +1,56 @@
+{
+	id: "430AA4A8C62D89E6"
+	group: "68F79A7A3D70E036"
+	order_index: 1
+	filename: "automated_mining"
+	title: "Computer Craft"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Early Automated Mining"
+			x: -1.0d
+			y: 0.5d
+			subtitle: "After reaching level 20 in mining, you can use turtles"
+			id: "68BB8D4D568225F5"
+			tasks: [{
+				id: "203AE341D9B9C9BF"
+				type: "professions:profession"
+				icon: "computercraft:turtle_normal"
+				prof: "professions:mining"
+				action: "LEVEL"
+				level: 20
+			}]
+		}
+		{
+			title: "Craft a Turtle"
+			x: -4.5d
+			y: -0.5d
+			description: [
+				"ComputerCraft is a mod that lets you use lua to to script turtles or computers to interact with the world"
+				""
+				"You can either learn how to use the language, or find scripts online to do tasks such as automated mining, crop harvesting, mob killing, and more"
+			]
+			dependencies: ["68BB8D4D568225F5"]
+			id: "0024507A0BC69291"
+			tasks: [{
+				id: "795B252E400D44F3"
+				type: "item"
+				item: "computercraft:turtle_normal"
+			}]
+		}
+		{
+			title: "Craft an Advanced Turtle"
+			x: -1.5d
+			y: -3.0d
+			description: ["To find out more about the turtles, you can open one and type 'help programming' to get more information"]
+			dependencies: ["0024507A0BC69291"]
+			id: "087AE8ECA9F19753"
+			tasks: [{
+				id: "4CD73F58448BB4D2"
+				type: "item"
+				item: "computercraft:turtle_advanced"
+			}]
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "alloy_forgery:forging",
+  "inputs": [
+    {
+      "item": "mythicmetals:starrite"
+    },
+	{
+      "tag": "c:raw_platinum_ores"
+    }
+  ],
+  "output": {
+    "id": "mythicmetals:star_platinum",
+    "count": 1
+  },
+  "min_forge_tier": 3,
+  "fuel_per_tick": 20
+}

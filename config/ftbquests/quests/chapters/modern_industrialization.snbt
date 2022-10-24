@@ -1,0 +1,156 @@
+{
+	id: "6AF6B4B0B2ECE3C7"
+	group: "3ECEB1C97A47B47E"
+	order_index: 0
+	filename: "modern_industrialization"
+	title: "Modern Industrialization"
+	icon: "modern_industrialization:nuke"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Way Of The Machine"
+			icon: "modern_industrialization:wrench"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "The Wrench and the Guidebook are your essential tools"
+			id: "5F8D62FB25BD49E2"
+			tasks: [
+				{
+					id: "5C89559470880E3A"
+					type: "item"
+					title: "Craft a Wrench"
+					icon: "modern_industrialization:wrench"
+					item: "modern_industrialization:wrench"
+				}
+				{
+					id: "2B169A1FD8E07B66"
+					type: "item"
+					item: "modern_industrialization:guidebook"
+				}
+			]
+		}
+		{
+			title: "Prepare a Steam Quarry"
+			icon: "modern_industrialization:steam_quarry"
+			x: 5.25d
+			y: -6.0d
+			shape: "octagon"
+			subtitle: "All the pieces needed for a multiblock quarry"
+			size: 1.5d
+			id: "391517EB938E24DC"
+			tasks: [
+				{
+					id: "618DBF9DA1DFA40A"
+					type: "item"
+					item: "modern_industrialization:steam_quarry"
+				}
+				{
+					id: "5B95EEA5F3BFDC8F"
+					type: "item"
+					item: "minecraft:chain"
+					count: 4L
+				}
+				{
+					id: "5EF3376560EAD137"
+					type: "item"
+					item: "modern_industrialization:steel_machine_casing"
+					count: 14L
+				}
+				{
+					id: "2DF53E4B5F839596"
+					type: "item"
+					item: "modern_industrialization:steel_machine_casing_pipe"
+					count: 6L
+				}
+				{
+					id: "2949DAD15AC89EF9"
+					type: "item"
+					item: "modern_industrialization:steel_item_input_hatch"
+				}
+				{
+					id: "5FF6132B5B281B5C"
+					type: "item"
+					item: "modern_industrialization:steel_item_output_hatch"
+				}
+				{
+					id: "3C437CE4B4BA1CFF"
+					type: "item"
+					item: "modern_industrialization:steel_fluid_input_hatch"
+				}
+			]
+			rewards: [
+				{
+					id: "449E50F135BF4E32"
+					type: "item"
+					item: {
+						id: "modern_industrialization:steel_tank"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								fluid: {
+									fk: {
+										fluid: "modern_industrialization:steam"
+									}
+								}
+								amt: 648000L
+							}
+						}
+					}
+				}
+				{
+					id: "2FA3D15B1DF9C212"
+					type: "item"
+					item: "modern_industrialization:black_fluid_pipe"
+					count: 16
+				}
+				{
+					id: "60F548506DC0ACC2"
+					type: "item"
+					item: "modern_industrialization:black_item_pipe"
+					count: 16
+				}
+			]
+		}
+		{
+			icon: "modern_industrialization:forge_hammer"
+			x: 1.0d
+			y: -2.5d
+			subtitle: "A useful set of tools to increase your yields when working materials"
+			dependencies: ["5FCDC57A6B581DBE"]
+			id: "377C65E84E3EC814"
+			tasks: [
+				{
+					id: "2F6865D3123E1E01"
+					type: "item"
+					item: "modern_industrialization:forge_hammer"
+				}
+				{
+					id: "38A0AD0F1DCB8FF9"
+					type: "item"
+					item: {
+						id: "modern_industrialization:iron_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Plates For a Hammer"
+			x: -1.0d
+			y: -1.5d
+			subtitle: "You will need 20 plates to make your first hammer"
+			dependencies: ["5F8D62FB25BD49E2"]
+			id: "5FCDC57A6B581DBE"
+			tasks: [{
+				id: "48D0D3A43DBD33C6"
+				type: "item"
+				item: "modern_industrialization:iron_plate"
+				count: 20L
+			}]
+		}
+	]
+}

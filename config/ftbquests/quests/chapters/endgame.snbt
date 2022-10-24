@@ -1,0 +1,690 @@
+{
+	id: "6E823AF6363893E5"
+	group: "3ECEB1C97A47B47E"
+	order_index: 1
+	filename: "endgame"
+	title: "Wrapping Up"
+	icon: "minecraft:nether_star"
+	default_quest_shape: "pentagon"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Ultimate Builder"
+			x: 2.0d
+			y: 3.5d
+			shape: "pentagon"
+			subtitle: "Achieve Level 100 in Building"
+			dependencies: ["6F5CAA8577C6CD8A"]
+			dependency_requirement: "all_started"
+			id: "03C3FE88A8613609"
+			tasks: [{
+				id: "37B8B25FEA7783A0"
+				type: "professions:profession"
+				icon: "blockus:limestone_bricks"
+				prof: "professions:building"
+				action: "LEVEL"
+				level: 100
+			}]
+		}
+		{
+			title: "Ultimate Miner"
+			x: 3.0d
+			y: -3.5d
+			shape: "pentagon"
+			subtitle: "Achieve Level 100 in Mining"
+			dependencies: ["6F5CAA8577C6CD8A"]
+			id: "29D4002E389E785C"
+			tasks: [{
+				id: "0200F4F10F97B382"
+				type: "professions:profession"
+				icon: {
+					id: "spectrum:bedrock_pickaxe"
+					Count: 1b
+					tag: {
+						Enchantments: [{
+							id: "minecraft:silk_touch"
+							lvl: 1s
+						}]
+					}
+				}
+				prof: "professions:mining"
+				action: "LEVEL"
+				level: 100
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.5d
+			shape: "pentagon"
+			subtitle: "Achieve Level 100 in Crafting"
+			dependencies: ["6F5CAA8577C6CD8A"]
+			id: "7B25A931EC0B37A0"
+			tasks: [{
+				id: "62D5E7292E5E74B3"
+				type: "professions:profession"
+				title: "Ultimate Crafter"
+				icon: "byg:blue_enchanted_crafting_table"
+				prof: "professions:crafting"
+				action: "LEVEL"
+				level: 100
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.5d
+			shape: "pentagon"
+			subtitle: "Achieve Level 100 in Enchanting"
+			dependencies: ["6F5CAA8577C6CD8A"]
+			id: "6A85168CABB411A5"
+			tasks: [{
+				id: "7D7A96BC4975CE46"
+				type: "professions:profession"
+				title: "Ultimate Enchanter"
+				icon: "minecraft:enchanting_table"
+				prof: "professions:enchanting"
+				action: "LEVEL"
+				level: 100
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.5d
+			shape: "pentagon"
+			subtitle: "Achieve Level 100 in Trading"
+			dependencies: ["6F5CAA8577C6CD8A"]
+			id: "1F8D4F1CF94A1CC6"
+			tasks: [{
+				id: "7D58D7D4FAE524FD"
+				type: "professions:profession"
+				title: "Villager Manipulator"
+				icon: "minecraft:emerald_block"
+				prof: "professions:trading"
+				action: "LEVEL"
+				level: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.5d
+			shape: "pentagon"
+			subtitle: "Achieve Level 100 in Fishing"
+			dependencies: ["6F5CAA8577C6CD8A"]
+			id: "11DE74EAF39E30D9"
+			tasks: [{
+				id: "77011538009EF385"
+				type: "professions:profession"
+				title: "The Bass Master"
+				icon: "croptopia:tuna"
+				prof: "professions:fishing"
+				action: "LEVEL"
+				level: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			shape: "pentagon"
+			subtitle: "Achieve Level 100 in Hunting"
+			dependencies: ["6F5CAA8577C6CD8A"]
+			id: "20B4812238E04A81"
+			tasks: [{
+				id: "2EF9F3F444922AD5"
+				type: "professions:profession"
+				title: "Ultimate Hunter"
+				icon: "artifacts:everlasting_beef"
+				prof: "professions:hunting"
+				action: "LEVEL"
+				level: 100
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.5d
+			shape: "pentagon"
+			subtitle: "Achieve Level 100 in Farming"
+			dependencies: ["6F5CAA8577C6CD8A"]
+			id: "59EAA904FC6ACACF"
+			tasks: [{
+				id: "174E27E06592840E"
+				type: "professions:profession"
+				title: "John Deere's Best Friend"
+				icon: {
+					id: "minecraft:netherite_hoe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				prof: "professions:farming"
+				action: "LEVEL"
+				level: 100
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.5d
+			shape: "pentagon"
+			subtitle: "Achieve Level 100 in Logging"
+			dependencies: ["6F5CAA8577C6CD8A"]
+			id: "7A11DCD5397ADD6E"
+			tasks: [{
+				id: "6CC7FAEDDCB41C0B"
+				type: "professions:profession"
+				title: "The Lorax's Worst Enemy"
+				icon: "byg:stripped_witch_hazel_log"
+				prof: "professions:logging"
+				action: "LEVEL"
+				level: 100
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.5d
+			shape: "pentagon"
+			subtitle: "Achieve Level 100 in Chef"
+			dependencies: ["6F5CAA8577C6CD8A"]
+			id: "222FC99A02B8F8CD"
+			tasks: [{
+				id: "3044A7F0E360FC70"
+				type: "professions:profession"
+				title: "A Mini Gordon Ramsay"
+				icon: "croptopia:shepherds_pie"
+				prof: "professions:chef"
+				action: "LEVEL"
+				level: 100
+			}]
+		}
+		{
+			icon: {
+				id: "minecraft:potion"
+				Count: 1b
+				tag: {
+					Potion: "biomemakeover:nocturnal_pot"
+				}
+			}
+			x: 5.0d
+			y: -3.5d
+			shape: "pentagon"
+			subtitle: "Achieve Level 100 in Alchemy"
+			dependencies: ["6F5CAA8577C6CD8A"]
+			id: "46BC0A96DA0500ED"
+			tasks: [{
+				id: "35FC92A4EAADF7B6"
+				type: "professions:profession"
+				title: "Lead To Riches"
+				icon: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:healing"
+					}
+				}
+				prof: "professions:alchemy"
+				action: "LEVEL"
+				level: 100
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.5d
+			shape: "pentagon"
+			dependencies: ["6F5CAA8577C6CD8A"]
+			dependency_requirement: "one_completed"
+			id: "434BDBE82C52FA4F"
+			tasks: [{
+				id: "683958B992AF4595"
+				type: "professions:profession"
+				title: "Ultimate Smither"
+				icon: {
+					id: "modern_industrialization:netherite_hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				prof: "professions:smithing"
+				action: "LEVEL"
+				level: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			shape: "diamond"
+			id: "6F5CAA8577C6CD8A"
+			tasks: [{
+				id: "19B499360EA83995"
+				type: "advancement"
+				title: "Dragon Slayer"
+				icon: "minecraft:dragon_egg"
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Feelin Real Bri'ish M8"
+			x: -2.5d
+			y: 0.0d
+			shape: "diamond"
+			subtitle: "Find an archaeological artifact"
+			dependencies: ["6F5CAA8577C6CD8A"]
+			id: "31B40F344D65A687"
+			tasks: [{
+				id: "07F7BDF26FBE5C60"
+				type: "advancement"
+				advancement: "artifacts:amateur_archaeologist"
+				criterion: ""
+			}]
+		}
+		{
+			x: -9.0d
+			y: -3.5d
+			dependencies: ["31B40F344D65A687"]
+			hide: true
+			id: "3FC2C16C91B799B1"
+			tasks: [{
+				id: "0DD29BFDD674C93B"
+				type: "item"
+				item: "artifacts:umbrella"
+				consume_items: false
+			}]
+		}
+		{
+			x: -9.0d
+			y: -2.5d
+			dependencies: ["31B40F344D65A687"]
+			hide: true
+			id: "55D5202AD731871B"
+			tasks: [{
+				id: "2A32EDA4110F506E"
+				type: "item"
+				item: "artifacts:everlasting_beef"
+			}]
+		}
+		{
+			x: -9.0d
+			y: -1.5d
+			dependencies: ["31B40F344D65A687"]
+			hide: true
+			id: "27F797A70368585A"
+			tasks: [{
+				id: "3798032452966666"
+				type: "item"
+				item: "artifacts:plastic_drinking_hat"
+			}]
+		}
+		{
+			x: -9.0d
+			y: -0.5d
+			dependencies: ["31B40F344D65A687"]
+			hide: true
+			id: "64BFBB96E1958670"
+			tasks: [{
+				id: "11B0ABB3EABCB4E3"
+				type: "item"
+				item: "artifacts:novelty_drinking_hat"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 0.5d
+			dependencies: ["31B40F344D65A687"]
+			hide: true
+			id: "419C4F3D96579D8A"
+			tasks: [{
+				id: "0F530FDD40DFBC47"
+				type: "item"
+				item: "artifacts:snorkel"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 1.5d
+			dependencies: ["31B40F344D65A687"]
+			hide: true
+			id: "5DE4F85EDF2A7613"
+			tasks: [{
+				id: "3C14C49E4DCF1E42"
+				type: "item"
+				item: "artifacts:night_vision_goggles"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 2.5d
+			dependencies: ["31B40F344D65A687"]
+			hide: true
+			id: "205A039679F70AAD"
+			tasks: [{
+				id: "6B7BFFC444963846"
+				type: "item"
+				item: "artifacts:villager_hat"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 3.5d
+			dependencies: ["31B40F344D65A687"]
+			hide: true
+			id: "67ACDC3420AD3F6E"
+			tasks: [{
+				id: "3C427FE7C2B1DC1F"
+				type: "item"
+				item: "artifacts:superstitious_hat"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -4.0d
+			dependencies: ["31B40F344D65A687"]
+			hide: true
+			id: "623163231B4325E9"
+			tasks: [{
+				id: "6FF54EAF0FF3E0C8"
+				type: "item"
+				item: "artifacts:lucky_scarf"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 4.0d
+			dependencies: ["31B40F344D65A687"]
+			hide: true
+			id: "66ECB77D9D8D37C6"
+			tasks: [{
+				id: "05BBED97C55BF8E4"
+				type: "item"
+				item: "artifacts:scarf_of_invisibility"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 4.5d
+			dependencies: ["31B40F344D65A687"]
+			hide: true
+			id: "2D4986EB21E46AFD"
+			tasks: [{
+				id: "15CC617F08AB7424"
+				type: "item"
+				item: "artifacts:cross_necklace"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -4.5d
+			dependencies: ["31B40F344D65A687"]
+			hide: true
+			id: "3950C2734D70D137"
+			tasks: [{
+				id: "443B3D4BBA36E3D6"
+				type: "item"
+				item: "artifacts:panic_necklace"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -4.5d
+			dependencies: ["31B40F344D65A687"]
+			id: "36C60942BDEB755E"
+			tasks: [{
+				id: "6430AA51A9A16CB0"
+				type: "item"
+				item: "artifacts:shock_pendant"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 4.5d
+			dependencies: ["31B40F344D65A687"]
+			id: "09791AB5FB690E05"
+			tasks: [{
+				id: "05CA99609B72A278"
+				type: "item"
+				item: "artifacts:flame_pendant"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 4.5d
+			dependencies: ["31B40F344D65A687"]
+			id: "7C0BEBFDA1A792BF"
+			tasks: [{
+				id: "1AF9F85E4280CEC1"
+				type: "item"
+				item: "artifacts:thorn_pendant"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -4.5d
+			dependencies: ["31B40F344D65A687"]
+			id: "34675C58397EDF5C"
+			tasks: [{
+				id: "19FF55999D92074D"
+				type: "item"
+				item: "artifacts:charm_of_sinking"
+			}]
+		}
+		{
+			title: "Floating On Air"
+			x: -10.0d
+			y: 0.0d
+			dependencies: ["31B40F344D65A687"]
+			id: "04EEFF7DAAB7D96F"
+			tasks: [{
+				id: "0C8846C165CFD1BA"
+				type: "item"
+				item: "artifacts:cloud_in_a_bottle"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 3.5d
+			dependencies: ["04EEFF7DAAB7D96F"]
+			id: "7BED92BC9EA0823B"
+			tasks: [{
+				id: "0400465701A49E26"
+				type: "item"
+				item: "artifacts:obsidian_skull"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -3.5d
+			dependencies: ["04EEFF7DAAB7D96F"]
+			id: "52D2BB86392E686D"
+			tasks: [{
+				id: "795DFC4A0C92B043"
+				type: "item"
+				item: "artifacts:antidote_vessel"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -3.5d
+			dependencies: ["04EEFF7DAAB7D96F"]
+			id: "3A9499EE104CA2EF"
+			tasks: [{
+				id: "2660455D69D5A4C4"
+				type: "item"
+				item: "artifacts:crystal_heart"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 3.5d
+			dependencies: ["04EEFF7DAAB7D96F"]
+			id: "0543D359D8D8008F"
+			tasks: [{
+				id: "5C0AB985B3A3E11C"
+				type: "item"
+				item: "artifacts:helium_flamingo"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 3.5d
+			dependencies: ["04EEFF7DAAB7D96F"]
+			id: "44DB3CD9C76A9520"
+			tasks: [{
+				id: "7B160BCBDC9B4B5D"
+				type: "item"
+				item: "artifacts:digging_claws"
+			}]
+		}
+		{
+			x: -12.0d
+			y: -3.5d
+			dependencies: ["04EEFF7DAAB7D96F"]
+			id: "1E788F6A15DBFB82"
+			tasks: [{
+				id: "3F2C9CE3B4F97E6D"
+				type: "item"
+				item: "artifacts:feral_claws"
+			}]
+		}
+		{
+			x: -13.0d
+			y: 3.0d
+			dependencies: ["04EEFF7DAAB7D96F"]
+			id: "4F27A9612BCB0CDA"
+			tasks: [{
+				id: "7BF78012699FB47F"
+				type: "item"
+				item: "artifacts:power_glove"
+			}]
+		}
+		{
+			x: -13.0d
+			y: -3.0d
+			dependencies: ["04EEFF7DAAB7D96F"]
+			id: "1B09D8A436D736ED"
+			tasks: [{
+				id: "6611BAA526637F9C"
+				type: "item"
+				item: "artifacts:fire_gauntlet"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 2.0d
+			dependencies: ["04EEFF7DAAB7D96F"]
+			id: "2E43B343663EF7DC"
+			tasks: [{
+				id: "2DE42E5316A621D7"
+				type: "item"
+				item: "artifacts:pocket_piston"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -2.0d
+			dependencies: ["04EEFF7DAAB7D96F"]
+			id: "485ABD2EBF8BD823"
+			tasks: [{
+				id: "212EA7BC7B744D97"
+				type: "item"
+				item: "artifacts:vampiric_glove"
+			}]
+		}
+		{
+			x: -14.0d
+			y: -1.0d
+			dependencies: ["04EEFF7DAAB7D96F"]
+			id: "69276B42B95766D5"
+			tasks: [{
+				id: "42E16DF4C56842C4"
+				type: "item"
+				item: "artifacts:golden_hook"
+			}]
+		}
+		{
+			x: -18.0d
+			y: 0.0d
+			dependencies: [
+				"62566EF1255450C6"
+				"2020D4BA8BD34599"
+				"4A8EA26E8A67D0CE"
+				"49465F88D21013E9"
+				"2F654680A868E895"
+			]
+			id: "293D219D8D6BE19E"
+			tasks: [{
+				id: "2CE71BA0E6CE3F19"
+				type: "item"
+				item: "artifacts:aqua_dashers"
+			}]
+		}
+		{
+			title: "Gotta Go Fast!"
+			x: -15.0d
+			y: 0.0d
+			dependencies: [
+				"04EEFF7DAAB7D96F"
+				"66F67FEB51C818D7"
+				"69276B42B95766D5"
+			]
+			id: "62566EF1255450C6"
+			tasks: [{
+				id: "40723AA94982D50C"
+				type: "item"
+				item: "artifacts:running_shoes"
+			}]
+		}
+		{
+			x: -16.0d
+			y: -2.0d
+			dependencies: ["62566EF1255450C6"]
+			id: "4A8EA26E8A67D0CE"
+			tasks: [{
+				id: "734D88C8CA1D1801"
+				type: "item"
+				item: "artifacts:bunny_hoppers"
+			}]
+		}
+		{
+			x: -16.0d
+			y: 2.0d
+			dependencies: ["62566EF1255450C6"]
+			id: "2F654680A868E895"
+			tasks: [{
+				id: "2E6D25423EF0A5D8"
+				type: "item"
+				item: "artifacts:kitty_slippers"
+			}]
+		}
+		{
+			x: -17.0d
+			y: -1.0d
+			dependencies: ["62566EF1255450C6"]
+			id: "49465F88D21013E9"
+			tasks: [{
+				id: "58D51CCC3F7E0215"
+				type: "item"
+				item: "artifacts:steadfast_spikes"
+			}]
+		}
+		{
+			x: -17.0d
+			y: 1.0d
+			dependencies: ["62566EF1255450C6"]
+			id: "2020D4BA8BD34599"
+			tasks: [{
+				id: "11CC0CD0C04EAAB6"
+				type: "item"
+				item: "artifacts:flippers"
+			}]
+		}
+		{
+			x: -14.0d
+			y: 1.0d
+			dependencies: ["04EEFF7DAAB7D96F"]
+			id: "66F67FEB51C818D7"
+			tasks: [{
+				id: "7CF9555F3D59C8BB"
+				type: "item"
+				item: "artifacts:whoopee_cushion"
+			}]
+		}
+	]
+}
