@@ -1,0 +1,69 @@
+{
+    "type": "professions:default",
+    "actions": [
+      {
+        "action": "professions:place_block",
+        "blocks": [
+          "#minecraft:saplings"
+        ],
+        "conditions": [],
+        "rewards": [
+          {
+            "amount": 0.5,
+            "reward": "professions:occupation_exp"
+          },
+          {
+            "amount": 0.25,
+            "currency": "eights_economy:dollars",
+            "reward": "professions:payment"
+          }
+        ]
+      },
+      {
+        "action": "professions:break_block",
+        "blocks": [
+          "#minecraft:logs"
+        ],
+        "conditions": [],
+        "rewards": [
+          {
+            "amount": 4.0,
+            "reward": "professions:occupation_exp"
+          },
+          {
+            "amount": 1.0,
+            "currency": "eights_economy:dollars",
+            "reward": "professions:payment"
+          }
+        ]
+      }
+    ],
+    "color": "#9E3011",
+    "description": [
+      "Earn money and experience",
+      "by farming trees."
+    ],
+    "descriptionColor": "#FFFFFF",
+    "displayName": "Logging",
+    "experienceSclEquation": "1000*1.03706264^(lvl-1)",
+    "incomeSclEquation": "base",
+    "maxLevel": 100,
+    "modifiers": {
+      "milestones": [],
+      "perks": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "increaseBy": 0.2,
+          "level": 1,
+          "perk": "professions:scaling_attribute"
+        },
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "increaseBy": 0.05,
+          "level": 10,
+          "perk": "professions:scaling_attribute"
+        }
+      ]
+    },
+    "unlocks": []
+  }

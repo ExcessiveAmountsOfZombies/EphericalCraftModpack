@@ -1,0 +1,68 @@
+{
+    "function_type": "professions:append",
+    "to_edit_profession_key": "professions:building",
+    "actions": [
+      {
+        "action": "professions:place_block",
+        "conditions": [],
+        "rewards": [
+          {
+            "reward": "professions:payment",
+            "amount": 0.5,
+            "currency": "eights_economy:dollars"
+          },
+          {
+            "reward": "professions:occupation_exp",
+            "amount": 1.0
+          }
+        ],
+        "blocks": [
+          "#blockus:stone_blocks",
+          "#blockus:diorite_blocks",
+          "#blockus:granite_blocks",
+          "#blockus:dripstone_blocks",
+          "#blockus:tuff_blocks",
+          "#blockus:deepslate_blocks",
+          "#blockus:sculk_blocks",
+          "#blockus:amethyst_blocks",
+          "#blockus:blackstone_blocks",
+          "#blockus:basalt_blocks",
+          "#blockus:limestone",
+          "#blockus:marble",
+          "#blockus:bluestone",
+          "#blockus:viridite",
+          "#blockus:sandstone",
+          "#blockus:red_sandstone",
+          "#blockus:soul_sandstone",
+          "#blockus:lava_bricks",
+          "#blockus:magma_bricks",
+          "#blockus:blaze_bricks",
+          "#blockus:water_bricks",
+          "#blockus:snow_bricks",
+          "#blockus:ice_bricks",
+          "#blockus:obsidian",
+          "#blockus:netherrack_blocks",
+          "#blockus:quartz_blocks",
+          "#blockus:bricks_blocks",
+          "#blockus:rainbow_blocks",
+          "#blockus:honeycomb_blocks",
+          "#blockus:purpur_blocks",
+          "#blockus:end_stone_blocks",
+          "#blockus:timber_frames",
+          "#blockus:small_hedges",
+          "#blockus:food_crates",
+          "#blockus:concrete_blocks",
+          "#blockus:stained_stone_bricks",
+          "#blockus:neon",
+          "#blockus:asphalt",
+          "#blockus:shingles",
+          "#blockus:beveled_glass",
+          "#blockus:patterned_wool",
+          "#blockus:colored_tiles",
+          "#blockus:glazed_terracotta_pillars",
+          "#blockus:framed_paper_blocks"
+        ]
+      }
+    ],
+    "unlocks": []
+  }
