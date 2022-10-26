@@ -1,7 +1,7 @@
 {
 	id: "6E823AF6363893E5"
 	group: "3ECEB1C97A47B47E"
-	order_index: 1
+	order_index: 0
 	filename: "endgame"
 	title: "Wrapping Up"
 	icon: "minecraft:nether_star"
@@ -684,6 +684,100 @@
 				id: "7CF9555F3D59C8BB"
 				type: "item"
 				item: "artifacts:whoopee_cushion"
+			}]
+		}
+		{
+			title: "Kill The Night Lich"
+			x: -3.0d
+			y: 6.5d
+			shape: "diamond"
+			description: [
+				"Before you kill the night lich you will need to find soul stars."
+				""
+				"Then you will place the stars into the altars in the tower to spawn the lich."
+			]
+			dependencies: ["7BE72FCA6831E0DA"]
+			id: "63ABBE06DD7A75FB"
+			tasks: [{
+				id: "03854A61557A5A05"
+				type: "advancement"
+				advancement: "bosses_of_mass_destruction:adventure/night_lich_defeat"
+				criterion: ""
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.0d
+			id: "7BE72FCA6831E0DA"
+			tasks: [{
+				id: "2B60CDCEEF8B80EB"
+				type: "item"
+				item: "bosses_of_mass_destruction:soul_star"
+				count: 4L
+			}]
+		}
+		{
+			x: -5.0d
+			y: 7.0d
+			id: "1AE4FD4A746E03FE"
+			tasks: [{
+				id: "31C13B502613C934"
+				type: "item"
+				item: "bosses_of_mass_destruction:void_lily"
+			}]
+		}
+		{
+			title: "Kill The Void Blossom"
+			x: -3.5d
+			y: 7.0d
+			shape: "diamond"
+			subtitle: "Follow the Void Lily"
+			dependencies: ["1AE4FD4A746E03FE"]
+			id: "0BDE5BF301C425EF"
+			tasks: [{
+				id: "706544A979DBC377"
+				type: "advancement"
+				advancement: "bosses_of_mass_destruction:adventure/void_blossom_defeat"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Kill The Nether Gauntlet"
+			x: -2.5d
+			y: 7.0d
+			shape: "diamond"
+			subtitle: "Found in the Nether"
+			id: "313283AF52F46611"
+			tasks: [{
+				id: "104EA53D2699C245"
+				type: "advancement"
+				advancement: "bosses_of_mass_destruction:nether/gauntlet_defeat"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Kill The Obsidilith"
+			x: -3.0d
+			y: 7.5d
+			shape: "diamond"
+			subtitle: "They can be found in the outer end islands"
+			dependencies: ["0D5BDEBEC69B8641"]
+			id: "75EB7F6DA7C7E53D"
+			tasks: [{
+				id: "302ECDE18B2C9D1B"
+				type: "advancement"
+				advancement: "bosses_of_mass_destruction:end/obsidilith_defeat"
+				criterion: ""
+			}]
+		}
+		{
+			x: -3.0d
+			y: 9.0d
+			id: "0D5BDEBEC69B8641"
+			tasks: [{
+				id: "0E6984997200547F"
+				type: "item"
+				item: "minecraft:ender_eye"
 			}]
 		}
 	]

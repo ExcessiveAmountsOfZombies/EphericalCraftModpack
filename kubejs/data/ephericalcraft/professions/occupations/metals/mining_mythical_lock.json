@@ -5,7 +5,7 @@
     "unlocks": [
         {
             "unlock": "professions:interaction_unlock",
-            "level": 40,
+            "level": 30,
             "items": [
                 "alloy_forgery:adamantite_block_forge_controller",
                 "alloy_forgery:end_stone_bricks_forge_controller"

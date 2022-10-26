@@ -2,7 +2,7 @@
   "badgeVisible": true,
   "builtinServers": [
     {
-      "name": "Default Server",
+      "name": "Local Server",
       "address": "127.0.0.1",
       "forced": false
     }

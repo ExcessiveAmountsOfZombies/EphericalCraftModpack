@@ -1,6 +1,6 @@
 {
 	id: "6AF6B4B0B2ECE3C7"
-	group: "3ECEB1C97A47B47E"
+	group: ""
 	order_index: 0
 	filename: "modern_industrialization"
 	title: "Modern Industrialization"
@@ -11,9 +11,10 @@
 		{
 			title: "The Way Of The Machine"
 			icon: "modern_industrialization:wrench"
-			x: 0.0d
-			y: 0.0d
+			x: 0.5d
+			y: 0.5d
 			subtitle: "The Wrench and the Guidebook are your essential tools"
+			dependencies: ["28E263DCF24F8F67"]
 			id: "5F8D62FB25BD49E2"
 			tasks: [
 				{
@@ -31,12 +32,16 @@
 			]
 		}
 		{
-			title: "Prepare a Steam Quarry"
+			title: "The Coup De Grace Of The Steam Age"
 			icon: "modern_industrialization:steam_quarry"
-			x: 5.25d
-			y: -6.0d
+			x: 4.5d
+			y: -7.5d
 			shape: "octagon"
-			subtitle: "All the pieces needed for a multiblock quarry"
+			subtitle: "Soon, the electric age will begin."
+			dependencies: [
+				"05F1FB20F09D4D23"
+				"18F3D5AE78732A03"
+			]
 			size: 1.5d
 			id: "391517EB938E24DC"
 			tasks: [
@@ -114,8 +119,8 @@
 		}
 		{
 			icon: "modern_industrialization:forge_hammer"
-			x: 1.0d
-			y: -2.5d
+			x: -1.0d
+			y: -2.0d
 			subtitle: "A useful set of tools to increase your yields when working materials"
 			dependencies: ["5FCDC57A6B581DBE"]
 			id: "377C65E84E3EC814"
@@ -140,7 +145,7 @@
 		}
 		{
 			title: "Plates For a Hammer"
-			x: -1.0d
+			x: 1.5d
 			y: -1.5d
 			subtitle: "You will need 20 plates to make your first hammer"
 			dependencies: ["5F8D62FB25BD49E2"]
@@ -150,6 +155,637 @@
 				type: "item"
 				item: "modern_industrialization:iron_plate"
 				count: 20L
+			}]
+		}
+		{
+			title: "Your First Bronze"
+			icon: "modern_industrialization:bronze_dust"
+			x: 3.0d
+			y: 2.0d
+			description: ["Everything begins with bronze"]
+			id: "28E263DCF24F8F67"
+			tasks: [
+				{
+					id: "7DC2E67385F591FC"
+					type: "item"
+					item: {
+						id: "modern_industrialization:iron_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2B2A727AB1D131B8"
+					type: "item"
+					item: "minecraft:raw_copper"
+					count: 3L
+				}
+				{
+					id: "2BB2B4A471B07C53"
+					type: "item"
+					item: "modern_industrialization:raw_tin"
+					count: 3L
+				}
+			]
+			rewards: [{
+				id: "0822A277F9FC5078"
+				type: "item"
+				item: "modern_industrialization:bronze_dust"
+				count: 4
+			}]
+		}
+		{
+			title: "Make a Coke Oven"
+			icon: "modern_industrialization:coke_oven"
+			x: -4.5d
+			y: 3.75d
+			shape: "octagon"
+			subtitle: "The preceding quests will show you all the materials you need for your first coke oven"
+			dependencies: ["0ACF555E8D1C48C7"]
+			size: 1.5d
+			id: "6F85ECF0190C79F0"
+			tasks: [
+				{
+					id: "6944070BA0DDD1F0"
+					type: "item"
+					item: "modern_industrialization:coke_oven"
+				}
+				{
+					id: "4EC9345106F10616"
+					type: "item"
+					item: "modern_industrialization:bronze_item_input_hatch"
+				}
+				{
+					id: "2056BB143DB1CC8F"
+					type: "item"
+					item: "modern_industrialization:bronze_item_output_hatch"
+				}
+				{
+					id: "0588A04D2853F198"
+					type: "item"
+					item: "modern_industrialization:bronze_fluid_input_hatch"
+				}
+				{
+					id: "1465420094CA23EE"
+					type: "item"
+					item: "modern_industrialization:bronze_fluid_output_hatch"
+				}
+				{
+					id: "0AD31EC73945E1BE"
+					type: "item"
+					item: "minecraft:bricks"
+					count: 20L
+				}
+			]
+			rewards: [
+				{
+					id: "4A9CD6A4B3CA2178"
+					type: "item"
+					item: "modern_industrialization:steam_bucket"
+				}
+				{
+					id: "42A2417C31446671"
+					type: "item"
+					item: "minecraft:coal"
+					count: 8
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 1.0d
+			dependencies: [
+				"2303DF353D654670"
+				"52D96F628DFF8D8F"
+			]
+			id: "47B8762EF3D89388"
+			tasks: [{
+				id: "52A63DC16E0C374E"
+				type: "item"
+				item: "modern_industrialization:bronze_gear"
+				count: 4L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.0d
+			dependencies: ["377C65E84E3EC814"]
+			id: "1894A97D902DD674"
+			tasks: [{
+				id: "7014656EBEAA6DAC"
+				type: "item"
+				item: "modern_industrialization:bronze_plate"
+				count: 24L
+			}]
+		}
+		{
+			x: -3.5d
+			y: 2.5d
+			shape: "diamond"
+			dependencies: [
+				"47B8762EF3D89388"
+				"1894A97D902DD674"
+			]
+			id: "0ACF555E8D1C48C7"
+			tasks: [{
+				id: "0EF4B70AC98A69D1"
+				type: "item"
+				item: "modern_industrialization:bronze_machine_casing"
+				count: 4L
+			}]
+		}
+		{
+			x: -4.0d
+			y: -0.5d
+			dependencies: [
+				"1BBDCBDACABA1814"
+				"7209E143CD2C3144"
+			]
+			id: "2303DF353D654670"
+			tasks: [{
+				id: "1488207E9D96BFE4"
+				type: "item"
+				item: "modern_industrialization:bronze_ring"
+				count: 4L
+			}]
+		}
+		{
+			x: -3.0d
+			y: -0.5d
+			dependencies: ["377C65E84E3EC814"]
+			id: "1BBDCBDACABA1814"
+			tasks: [{
+				id: "07BB9DA5E278DCDD"
+				type: "item"
+				item: "modern_industrialization:bronze_bolt"
+				count: 8L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			dependencies: ["377C65E84E3EC814"]
+			id: "52D96F628DFF8D8F"
+			tasks: [{
+				id: "339409065BBF8B22"
+				type: "item"
+				item: "modern_industrialization:bronze_bolt"
+				count: 16L
+			}]
+		}
+		{
+			x: -4.0d
+			y: -1.5d
+			dependencies: ["377C65E84E3EC814"]
+			id: "7209E143CD2C3144"
+			tasks: [{
+				id: "1D85D94E0D03B747"
+				type: "item"
+				item: "modern_industrialization:bronze_rod"
+				count: 8L
+			}]
+		}
+		{
+			x: -7.0d
+			y: 2.0d
+			description: [
+				"After making the coke oven, you will want a way to put steam into it, rather than smelting buckets of water in a furnace and then moving them to the oven's fluid input hatch"
+				""
+				"Currently, the next best way is to make a bronze boiler."
+			]
+			dependencies: ["6F85ECF0190C79F0"]
+			id: "1F3812B27E8A0BFC"
+			tasks: [{
+				id: "03751868C67044A6"
+				type: "checkmark"
+				title: "Coke Oven Fuel"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -1.0d
+			shape: "diamond"
+			dependencies: [
+				"6F7799BA2F2E9B13"
+				"08C95EDBFD76581C"
+			]
+			size: 2.0d
+			id: "0C5B4BAE19FB64F5"
+			tasks: [{
+				id: "2455CF64CF80336B"
+				type: "item"
+				item: "modern_industrialization:bronze_boiler"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 0.0d
+			shape: "diamond"
+			dependencies: ["2B3B39806B3A0E3F"]
+			id: "6F7799BA2F2E9B13"
+			tasks: [{
+				id: "7C573783ACDE6787"
+				type: "item"
+				item: "modern_industrialization:bronze_tank"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 0.5d
+			shape: "diamond"
+			dependencies: ["2B3B39806B3A0E3F"]
+			id: "08C95EDBFD76581C"
+			tasks: [{
+				id: "6A223896AA7BE4F6"
+				type: "item"
+				item: "modern_industrialization:fire_clay_bricks"
+				count: 3L
+			}]
+		}
+		{
+			title: "More Bronze Plates"
+			x: -8.0d
+			y: 1.0d
+			shape: "diamond"
+			dependencies: ["1F3812B27E8A0BFC"]
+			id: "2B3B39806B3A0E3F"
+			tasks: [{
+				id: "2191E45D6270C860"
+				type: "item"
+				item: "modern_industrialization:bronze_plate"
+				count: 12L
+			}]
+		}
+		{
+			x: -8.5d
+			y: -2.5d
+			shape: "diamond"
+			subtitle: "Now you need a way to pipe the steam into the coke oven"
+			dependencies: ["0C5B4BAE19FB64F5"]
+			id: "281E678F64D33927"
+			tasks: [{
+				id: "5CA4BC400D7DFB9F"
+				type: "item"
+				item: "modern_industrialization:fluid_pipe"
+				count: 16L
+			}]
+		}
+		{
+			x: -7.5d
+			y: -3.5d
+			shape: "circle"
+			description: ["Now that we have a means of producing coal coke, we now need to begin working on steel production."]
+			dependencies: ["281E678F64D33927"]
+			id: "08D5A4494FA66038"
+			tasks: [{
+				id: "2091F9821D4344CC"
+				type: "checkmark"
+				title: "Onwards to Steel!"
+			}]
+		}
+		{
+			title: "Gears For The Grind"
+			icon: "modern_industrialization:copper_gear"
+			x: -6.5d
+			y: -4.5d
+			dependencies: ["08D5A4494FA66038"]
+			id: "200F8BDB1692DDC6"
+			tasks: [
+				{
+					id: "4FDBDD111390E2F0"
+					type: "item"
+					item: "modern_industrialization:copper_gear"
+					count: 3L
+				}
+				{
+					id: "667527395A37DDA0"
+					type: "item"
+					item: "modern_industrialization:bronze_machine_casing"
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: -6.0d
+			shape: "diamond"
+			dependencies: ["200F8BDB1692DDC6"]
+			size: 1.5d
+			id: "006D6D8E0268642A"
+			tasks: [{
+				id: "2D5115A9C17BAF60"
+				type: "item"
+				item: "modern_industrialization:bronze_macerator"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -8.0d
+			shape: "square"
+			dependencies: ["006D6D8E0268642A"]
+			id: "0D19DCA86703070D"
+			tasks: [{
+				id: "1DFE374961641E8F"
+				type: "item"
+				item: "modern_industrialization:coke_dust"
+				count: 18L
+			}]
+		}
+		{
+			x: -5.5d
+			y: -7.0d
+			shape: "square"
+			dependencies: ["006D6D8E0268642A"]
+			id: "53465F6FC9633123"
+			tasks: [{
+				id: "3626B44FC2115DDA"
+				type: "item"
+				item: "modern_industrialization:iron_dust"
+				count: 63L
+			}]
+		}
+		{
+			title: "Processing Required"
+			x: -5.5d
+			y: -8.5d
+			shape: "square"
+			dependencies: [
+				"53465F6FC9633123"
+				"0D19DCA86703070D"
+			]
+			id: "3A9C05A306C3A9B5"
+			tasks: [{
+				id: "0D34BA3AF75AE85E"
+				type: "item"
+				item: "modern_industrialization:uncooked_steel_dust"
+				count: 63L
+			}]
+			rewards: [{
+				id: "13A483188A7FF314"
+				type: "item"
+				item: "modern_industrialization:uncooked_steel_dust"
+			}]
+		}
+		{
+			title: "So Anyways, I Started Blasting"
+			x: -8.25d
+			y: -10.5d
+			shape: "diamond"
+			subtitle: "Everything you need to begin creating steel."
+			dependencies: ["4CE376C346478D4B"]
+			size: 1.5d
+			id: "515A4E0893619C76"
+			tasks: [
+				{
+					id: "254D49BFFCC196B5"
+					type: "item"
+					item: "modern_industrialization:steam_blast_furnace"
+				}
+				{
+					id: "49A00D37CAF5B4F7"
+					type: "item"
+					item: "modern_industrialization:bronze_fluid_input_hatch"
+				}
+				{
+					id: "45BA6B8FE3D29007"
+					type: "item"
+					item: "modern_industrialization:bronze_item_input_hatch"
+				}
+				{
+					id: "7C71D64E421A919E"
+					type: "item"
+					item: "modern_industrialization:bronze_item_output_hatch"
+				}
+			]
+		}
+		{
+			title: "Blast 64 Steel Ingots"
+			x: -4.5d
+			y: -11.0d
+			shape: "octagon"
+			dependencies: [
+				"3A9C05A306C3A9B5"
+				"515A4E0893619C76"
+			]
+			id: "45FF42761528F634"
+			tasks: [{
+				id: "726D45C0BDABE5E9"
+				type: "item"
+				title: "Any #c:steel_ingots"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "c:steel_ingots"
+					}
+				}
+				count: 64L
+			}]
+		}
+		{
+			x: -10.5d
+			y: -9.0d
+			hide_dependency_lines: true
+			dependencies: ["2B3B39806B3A0E3F"]
+			id: "4CE376C346478D4B"
+			tasks: [{
+				id: "689A41862D5D95C4"
+				type: "item"
+				item: "modern_industrialization:fire_clay_bricks"
+				count: 29L
+			}]
+		}
+		{
+			title: "Your First Upgrades"
+			x: -3.0d
+			y: -9.0d
+			shape: "diamond"
+			dependencies: ["45FF42761528F634"]
+			id: "1A7355DE9BCA88B6"
+			tasks: [{
+				id: "333FCDBDFA38D79C"
+				type: "item"
+				item: "modern_industrialization:steel_upgrade"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -7.0d
+			dependencies: ["1A7355DE9BCA88B6"]
+			id: "7A80F86A20F52718"
+			tasks: [{
+				id: "0C17EE848406DC0A"
+				type: "item"
+				item: "modern_industrialization:steel_boiler"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -8.0d
+			shape: "diamond"
+			subtitle: "The Furnaces Never Sleep."
+			dependencies: [
+				"2467710BCEB60355"
+				"60995102483B6BE1"
+			]
+			id: "05F1FB20F09D4D23"
+			tasks: [{
+				id: "354AAC27890E30CE"
+				type: "item"
+				item: "modern_industrialization:steel_machine_casing"
+				count: 21L
+			}]
+		}
+		{
+			x: -0.5d
+			y: -9.5d
+			hide_dependency_lines: true
+			dependencies: ["45FF42761528F634"]
+			id: "2467710BCEB60355"
+			tasks: [{
+				id: "129B585182F7CFF8"
+				type: "item"
+				item: "modern_industrialization:steel_ingot"
+				count: 168L
+			}]
+		}
+		{
+			x: -0.5d
+			y: -6.5d
+			subtitle: "Even More Steel"
+			dependencies: [
+				"5277DC35B957BC11"
+				"2B7EBA4DE12950D4"
+			]
+			id: "60995102483B6BE1"
+			tasks: [{
+				id: "5913BD7078683BA4"
+				type: "item"
+				item: "modern_industrialization:steel_gear"
+				count: 21L
+			}]
+		}
+		{
+			x: -3.5d
+			y: -4.0d
+			dependencies: ["27D830CEE15DA7AA"]
+			id: "5277DC35B957BC11"
+			tasks: [{
+				id: "3002591B72A2C3EB"
+				type: "item"
+				item: "modern_industrialization:steel_ring"
+				count: 21L
+			}]
+		}
+		{
+			title: "Rod's And Bolts"
+			icon: "modern_industrialization:steel_rod"
+			x: -4.5d
+			y: -5.5d
+			subtitle: "Another 33 Steel Ingots"
+			dependencies: ["7A80F86A20F52718"]
+			id: "27D830CEE15DA7AA"
+			tasks: [
+				{
+					id: "43AED1A51244D45E"
+					type: "item"
+					item: "modern_industrialization:steel_bolt"
+					count: 44L
+				}
+				{
+					id: "7BA4E56E597AF16C"
+					type: "item"
+					item: "modern_industrialization:steel_rod"
+					count: 44L
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -8.0d
+			hide_dependency_lines: true
+			dependencies: ["5277DC35B957BC11"]
+			id: "2B7EBA4DE12950D4"
+			tasks: [{
+				id: "37593EBBC4754A4C"
+				type: "item"
+				item: "modern_industrialization:steel_ingot"
+				count: 105L
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.0d
+			dependencies: [
+				"05F1FB20F09D4D23"
+				"0FB8F57D7B4D9FF2"
+			]
+			id: "18F3D5AE78732A03"
+			tasks: [{
+				id: "267E1B23F3A99EA6"
+				type: "item"
+				item: "modern_industrialization:steel_machine_casing_pipe"
+				count: 6L
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.0d
+			subtitle: "Another 18 Ingots"
+			hide_dependency_lines: true
+			dependencies: ["05F1FB20F09D4D23"]
+			id: "0FB8F57D7B4D9FF2"
+			tasks: [{
+				id: "31F0E5A76413230D"
+				type: "item"
+				item: "modern_industrialization:steel_curved_plate"
+				count: 18L
+			}]
+		}
+		{
+			title: "Level Crafting to 10 "
+			x: 6.5d
+			y: -5.0d
+			subtitle: "this is required to be able to place the wiremill"
+			id: "350DDB216DE8C780"
+			tasks: [{
+				id: "00FD7F6D2582D85C"
+				type: "professions:profession"
+				icon: "modern_industrialization:steel_wiremill"
+				prof: "professions:crafting"
+				action: "LEVEL"
+				level: 20
+			}]
+		}
+		{
+			title: "Level Crafting to 20"
+			x: 8.0d
+			y: -5.0d
+			subtitle: "This is required to place the vacuum freezer"
+			id: "565A8D6B3F31252B"
+			tasks: [{
+				id: "48ADCAC64AB1D1E7"
+				type: "professions:profession"
+				icon: "modern_industrialization:vacuum_freezer"
+				prof: "professions:crafting"
+				action: "LEVEL"
+				level: 20
+			}]
+		}
+		{
+			title: "Level Crafting to 30"
+			x: 9.5d
+			y: -5.0d
+			subtitle: "this is required to place the implosion compressor"
+			id: "6F7738AADCE0A5D3"
+			tasks: [{
+				id: "64573F292CDD4A14"
+				type: "professions:profession"
+				icon: "modern_industrialization:implosion_compressor"
+				prof: "professions:crafting"
+				action: "LEVEL"
+				level: 30
 			}]
 		}
 	]

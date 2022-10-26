@@ -677,5 +677,30 @@
 				count: 4L
 			}]
 		}
+		{
+			title: "Your First 3D Render"
+			x: -8.5d
+			y: -11.0d
+			subtitle: "and then you can post it on reddit!"
+			dependencies: ["7DE2618391DEAADB"]
+			id: "2DD8927EF5430A68"
+			tasks: [
+				{
+					id: "15E43FC0CB9BF25A"
+					type: "item"
+					item: "croptopia:doughnut"
+				}
+				{
+					id: "121A3BAAC464AF8A"
+					type: "item"
+					item: "croptopia:coffee"
+				}
+				{
+					id: "2128D70EE5D67C8C"
+					type: "item"
+					item: "minecraft:heavy_weighted_pressure_plate"
+				}
+			]
+		}
 	]
 }
