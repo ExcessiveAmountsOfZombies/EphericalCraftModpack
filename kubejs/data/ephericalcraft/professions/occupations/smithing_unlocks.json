@@ -1,0 +1,21 @@
+{
+    "function_type": "professions:append",
+    "to_edit_profession_key": "professions:smithing",
+    "actions": [],
+    "unlocks": [
+        {
+            "unlock": "professions:interaction_unlock",
+            "level": 10,
+            "items": [
+                "computercraft:turtle_advanced"
+            ]
+        },
+        {
+            "unlock": "professions:interaction_unlock",
+            "level": 5,
+            "items": [
+                "computercraft:turtle_normal"
+            ]
+        }
+    ]
+}

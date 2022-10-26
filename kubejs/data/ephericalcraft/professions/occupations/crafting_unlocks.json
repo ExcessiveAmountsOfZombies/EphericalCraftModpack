@@ -1,0 +1,28 @@
+{
+    "function_type": "professions:append",
+    "to_edit_profession_key": "professions:crafting",
+    "actions": [],
+    "unlocks": [
+        {
+            "unlock": "professions:interaction_unlock",
+            "level": 10,
+            "items": [
+                "modern_industrialization:steel_wiremill"
+            ]
+        },
+        {
+            "unlock": "professions:interaction_unlock",
+            "level": 20,
+            "items": [
+                "modern_industrialization:vacuum_freezer"
+            ]
+        },
+        {
+            "unlock": "professions:interaction_unlock",
+            "level": 30,
+            "items": [
+                "modern_industrialization:implosion_compressor"
+            ]
+        }
+    ]
+}
